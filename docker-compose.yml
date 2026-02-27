@@ -1,0 +1,43 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    ports:
+      - "8080:80"
+    volumes:
+      - ./ezpublish-legacy:/var/www/html
+      - ./dfs:/mnt/dfs
+      - ./docker/settings:/var/www/html/settings/override
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - ezpublish
+
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ezpublish
+      MYSQL_USER: ezpublish
+      MYSQL_PASSWORD: ezpublish
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./docker/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks:
+      - ezpublish
+
+volumes:
+  db_data:
+
+networks:
+  ezpublish:
+    driver: bridge

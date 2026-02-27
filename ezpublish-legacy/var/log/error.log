@@ -1,0 +1,39 @@
+[ Feb 27 2026 14:44:38 ] Unexpected error, the message was : Class 'ezcBaseOptions' not found in /var/www/html/kernel/private/options/ezpextensionoptions.php on line 57
+[ Feb 27 2026 14:45:22 ] Unexpected error, the message was : Class 'ezcBaseOptions' not found in /var/www/html/kernel/private/options/ezpextensionoptions.php on line 57
+[ Feb 27 2026 14:47:40 ] Unexpected error, the message was : Class 'ezcBaseOptions' not found in /var/www/html/kernel/private/options/ezpextensionoptions.php on line 57
+[ Feb 27 2026 14:54:09 ] Unexpected error, the message was : Class 'ezcBaseOptions' not found in /var/www/html/kernel/private/options/ezpextensionoptions.php on line 57
+[ Feb 27 2026 14:58:17 ] [a87986033a9a] eZINI::variable:
+Undefined variable: 'MaxCopyRetries' in group 'eZDFSClusteringSettings' in file.ini
+[ Feb 27 2026 14:58:17 ] [a87986033a9a] eZINI::variable:
+Undefined variable: 'DFSBackend' in group 'eZDFSClusteringSettings' in file.ini
+[ Feb 27 2026 14:58:17 ] Unexpected error, the message was : Invalid DFSBackend class . Were autoloads generated ? in /var/www/html/kernel/private/classes/clusterfilehandlers/ezdfsfilehandlerbackendfactory.php on line 46
+[ Feb 27 2026 15:00:25 ] [a87986033a9a] _getFileList( array(  ),  ):
+Failed to execute SQL for function:
+1146: Table 'ezpublish.ezdfsfile_cache' doesn't exist
+[ Feb 27 2026 15:00:25 ] [a87986033a9a] eZDFSFileHandlerMySQLiBackend::_getFileList:
+Unable to get file list
+[ Feb 27 2026 15:03:37 ] [a87986033a9a] _getFileList( array(  ),  ):
+Failed to execute SQL for function:
+1146: Table 'ezpublish.ezdfsfile_cache' doesn't exist
+[ Feb 27 2026 15:03:37 ] [a87986033a9a] eZDFSFileHandlerMySQLiBackend::_getFileList:
+Unable to get file list
+[ Feb 27 2026 15:08:31 ] [a87986033a9a] _getFileList( array(  ),  ):
+Failed to execute SQL for function:
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'' at line 1
+[ Feb 27 2026 15:08:31 ] [a87986033a9a] eZDFSFileHandlerMySQLiBackend::_getFileList:
+Unable to get file list
+[ Feb 27 2026 15:08:43 ] [a87986033a9a] _getFileList( array(  ),  ):
+Failed to execute SQL for function:
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'' at line 1
+[ Feb 27 2026 15:08:43 ] [a87986033a9a] eZDFSFileHandlerMySQLiBackend::_getFileList:
+Unable to get file list
+[ Feb 27 2026 15:08:51 ] [a87986033a9a] _getFileList( array(  ),  ):
+Failed to execute SQL for function:
+1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '--%'' at line 1
+[ Feb 27 2026 15:08:51 ] [a87986033a9a] eZDFSFileHandlerMySQLiBackend::_getFileList:
+Unable to get file list
+[ Feb 27 2026 15:09:19 ] [a87986033a9a] _getFileList( array(  ),  ):
+Failed to execute SQL for function:
+1054: Unknown column 'password' in 'field list'
+[ Feb 27 2026 15:09:19 ] [a87986033a9a] eZDFSFileHandlerMySQLiBackend::_getFileList:
+Unable to get file list
