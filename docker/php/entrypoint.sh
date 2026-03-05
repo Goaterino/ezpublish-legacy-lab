@@ -16,6 +16,7 @@ chown -R ezpublish:www-data var/ /mnt/dfs
 if [ ! -d "vendor" ]; then
     echo "Installation des dépendances Composer..."
     composer config audit.block-insecure false
+    composer config allow-plugins.ezsystems/ezpublish-legacy-installer true
     sudo -u ezpublish composer install --no-dev --ignore-platform-reqs 2>&1
 fi
 

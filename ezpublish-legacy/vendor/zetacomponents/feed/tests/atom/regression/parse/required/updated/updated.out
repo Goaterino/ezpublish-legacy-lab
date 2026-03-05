@@ -1,5 +1,0 @@
-<?php
-$feed = new ezcFeed( 'atom' );
-$feed->updated = 'Feed updated';
-return $feed;
-?>

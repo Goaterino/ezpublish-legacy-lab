@@ -1,5 +1,0 @@
-<?php
-return array( 'title' => 'Feed title',
-              'link'  => array( array( 'href' => 'Feed link' ) ),
-            );
-?>
