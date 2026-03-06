@@ -22,3 +22,7 @@ docker compose exec web su ezpublish
 - DFS mount point is simulated locally at `/mnt/dfs`
 - Settings overrides are in `docker/settings/`
 - MySQL test data is initialized from `docker/mysql/init.sql`
+
+# Vulnerabilities affecting this legacy kernel
+- [[SQL injection and arbitrary file deletion in dfscleanup]]
+
